@@ -1,0 +1,48 @@
+FUNCTION Leap(year) : BOOLEAN
+VAR
+    set_declarations
+BEGIN
+    if (year mod 4 !=0)then
+        RETURN False
+    elseif (year mod 100 ==0 and year mod 400 ==0) then
+        return true
+    eles return false
+END
+// ---------------------------------------
+FUNCTION ticketprice(age) : INTEGER
+VAR
+    
+BEGIN
+    IF (age <= 12) THEN
+        RETURN 10
+    ELSE_IF (13<=age <= 17) THEN
+        RETURN 15
+    ELSE
+        RETURN 20
+    END_IF
+    
+END
+//==============================================
+
+FUNCTION power(b,a) : 
+BEGIN
+    IF (a !=0) THEN
+        return (b * power(b, a - 1))
+    ELSE
+        return 1
+    END_IF
+    
+END
+/===========================================
+
+FUNCTION fibonacci(n) : INTEGER
+BEGIN
+    IF (n == 0) THEN
+        return 0
+    ELSE_IF (n == 1) THEN
+        sreturn 1;
+    ELSE
+        return fibonacci(n - 1) + fibonacci(n - 2)
+    END_IF
+    
+END
